@@ -27,12 +27,73 @@ transition : background 0.5s ease-in-out, padding 0.5s ease-in-out;
 .top-nav-collapse {
 padding : 0;
 }
-
+#loader-wrapper .logo {
+left : 48.7%;
+position : absolute;
+top : 48%;
+}
+#loader-wrapper .logo a {
+font-weight : 700;
+color : #3498DB;
+font-size : 12px;
+}
 .logo span {
 color : #f85654;
 }
-
-
+#loader-wrapper {
+position : fixed;
+top : 0;
+left : 0;
+width : 100%;
+height : 100%;
+z-index : 999999;
+background : #fff;
+}
+#loader {
+display : block;
+position : relative;
+left : 50%;
+top : 50%;
+width : 150px;
+height : 150px;
+margin : -75px 0 0 -75px;
+border-radius : 50%;
+border : transparent solid 3px;
+border-top-color : #3498db;
+animation : spin 2s linear infinite;
+}
+#loader:before {
+content : "";
+position : absolute;
+top : 5px;
+left : 5px;
+right : 5px;
+bottom : 5px;
+border-radius : 50%;
+border : transparent solid 3px;
+border-top-color : #444;
+animation : spin 3s linear infinite;
+}
+#loader:after {
+content : "";
+position : absolute;
+top : 15px;
+left : 15px;
+right : 15px;
+bottom : 15px;
+border-radius : 50%;
+border : transparent solid 3px;
+border-top-color : #1487b2;
+animation : spin 1.5s linear infinite;
+}
+@keyframes spin {
+0% {
+transform : rotate(0deg);
+}
+100% {
+transform : rotate(360deg);
+}
+}
 #nav_menu ul {
 float : right;
 list-style : none outside none;
@@ -278,18 +339,18 @@ height : 90px;
 padding : 190px 0;
 }
 .slider {
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
+display : block;
+text-align : center;
+vertical-align : middle;
+width : 100%;
 }
 #slider_sec {
-    background-image: url("../img/bb.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 650px;
-    width: 100%;
+background-image : url("../img/bb.jpg");
+background-position : center center;
+background-repeat : no-repeat;
+background-size : 100% 100%;
+height : 650px;
+width : 100%;
 }
 .left_crousel_btn, .right_crousel_btn {
 color : #fff;
