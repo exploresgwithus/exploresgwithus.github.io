@@ -336,7 +336,7 @@ display : block;
 height : 90px;
 }
 .wrap_caption {
-padding : 190px 0;
+padding : 310px 0;
 }
 .slider {
 display : block;
@@ -345,7 +345,7 @@ vertical-align : middle;
 width : 100%;
 }
 #slider_sec {
-background-image : url("../img/bb.jpg");
+background-image : url("../img/sgslider.jpg");
 background-position : center center;
 background-repeat : no-repeat;
 background-size : 100% 100%;

@@ -20,6 +20,21 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#AttractionsContent").toggle();
+            });
+        });
+    </script>
+    <style>
+        #SHButton:hover {
+            background-color: Gray;
+            color: black;
+            border-color: black;
+        }
+    </style>
 
 </head>
 <body>
@@ -62,12 +77,6 @@
             <div class="row">
                 <div class="slider">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
@@ -83,7 +92,7 @@
                                 <div class="wrap_caption">
                                     <div class="caption_carousel">
                                         <h1>Contact Us</h1>
-                                        <p>Add or contact us at +65 98355090 on Whatsapp, Line and Wechat</p>
+                                        <p>Add us at +65 98355090 on Whatsapp, Line and Wechat</p>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +100,7 @@
                                 <div class="wrap_caption">
                                     <div class="caption_carousel">
                                         <h1>Payment Methods</h1>
-                                        <p>We accept bank transfers & credit/debit card</p>
+                                        <p>Bank transfers & credit/debit card</p>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +133,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
                     <div class="abt">
-                        <p>I am Mark, a professional chauffeur with years of experience on the road. </p>
+                        <p>I am Mark, a professional chauffeur with years of experience on the road. <br/> Vehicle owned: Toyota Alphard Hybrid</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +168,7 @@
                         <div class="service_hoverly">
                             <i class="fa fa-paper-plane"></i>
                             <h2>Airport Transfers</h2>
-                            <p>Enjoy a hassle-free arrival/departure in Singapore and relax on your journey</p>
+                            <p>Enjoy a hassle-free arrival/departure in Singapore and relax on your journey to your destination</p>
                         </div>
                     </div>
                 </div>
@@ -197,9 +206,10 @@
                     <div class="title_sec">
                         <h1>Attractions</h1>
                         <h2>Must visit touristy and local attractions</h2>
+                        <button id="SHButton" style="background-color:black; border:none; color:white; border-radius:4px;">Show / Hide</button>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="AttractionsContent">
                     <div class="portfolio-filter text-uppercase text-center">
                         <ul class="filter">
                             <li class="active" data-filter="*">All</li>
@@ -400,61 +410,6 @@
                         <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
                             <div class="single-portfolio shop">
                                 <img class="img-responsive" src="img/vivo-.jpg" alt="Vivo City">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio ">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio web-design">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
-                                <img class="img-responsive" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-                            <div class="single-portfolio photography">
-                                <img class="img-responsive" src="" alt="">
                             </div>
                         </div>
                     </div>
